@@ -1,4 +1,4 @@
-# GIT COMMANDS
+# git commands
 ## git commands
 ### git commands
 #### git commands
@@ -26,6 +26,7 @@
 
 H~2~0
 H^2
+
 
 | Present Tense |Past Tense |
 | ------------- | -----------|
