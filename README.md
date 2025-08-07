@@ -3,6 +3,7 @@
 ## Content
 - [Defination](#what-is-git)
 - [Prerequisites](#prerequisites)
+- [Basic Setup](#basic-setup)
 - [GIT Initialization](#git-initialization)
 - [Checking git status](#checking-git-status)
 - [Staging your files](#staging-your-files)
@@ -13,6 +14,17 @@ GIT is an **open source** distributed version control system
 ## Prerequisites
 To use GIT, you are expected to have an updated version of the software on your operating system.
 To download go to the [git website]() and download the version for your operating system
+
+## Basic Setup
+Basic GIT commands to setup initially includes:
+1. To set your name
+```
+git config --global user.name "your name"
+```
+2. To set your email
+```
+git config --global user.email "your email"
+```
 
 ## GIT Initialization
 TO initialize a Git repository we use the `git init` command. To do this,
