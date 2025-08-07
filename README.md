@@ -42,3 +42,9 @@ git add index.html style.css
 ```
 git add .
 ```
+
+## Git log
+## Git Push
+## Git pull
+## Git Clone
+## Git Branch
