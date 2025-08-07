@@ -11,6 +11,8 @@
 
 [click here](https://google.com) to read more
 
+![this is an image](./image/pic.png)
+
 ```HTML
 <header></header>
 <main></main>
