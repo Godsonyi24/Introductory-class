@@ -4,10 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Webpage</title>
+    <style>
+      /*this is how to write a comment in CSS*/
+      /*CSS Syntax*/
+      /*
+      selector {
+        property: value;
+      }
+      */
+      /*<>angle bracket
+      [] bracket (sqr bracket)
+      () Parenthesis
+      {} curly bracket*/
+      
+      /* in CSS, we have various selection methods, we have:
+      selection by tagname e.g p, header
+      selection by classname e.g .class
+      selection by id name e.g #id
+      selection by attributes e.g element [attributes="value"]
+      */
+
+      p { /*selection by tagname*/
+        color: blue;
+      }
+
+      .main-p{ /*selection by classname*/
+        color: yellow;
+      }
+
+      #test { /*selection by idname*/
+        color: green;
+      }
+
+      input[type='password'] { /*selection by attribute*/
+        border-color: red;
+      }
+
+      h3{
+        color: green!important;
+      }
+      .h-logo{
+        color: purple;
+        font-weight: 300;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h3>Logo</h3>
+      <h3 style="color: red">Chinny's <span class="h-logo">Bread</span></h3>
+      <!--the above line is an Inline CSS into HTML-->
+      <!--It is important to note that Inline CSS is higher than Embedded/style tag. It will always override a style tag, even Idname selection (this is the highest selection level). However, puting '!important' overrides every other style, including inline css-->
       <nav>
         <a href="#">
           <p>Home</p>
@@ -19,12 +65,23 @@
           <p>Product</p>
         </a>
       </nav>
-      <p><a href="sub/sub.html">sub page</a> and <a href="../index.html">index page</a></p>
+      <p>
+        <a href="sub/sub.html">sub page</a> and
+        <a href="../index.html">index page</a>
+      </p>
     </header>
     <main>
       <h2>Home Page</h2>
-      <p>Welcome</p>
-      <p>Welcome to the home page</p>
+      <p class="main-p" id="text">Welcome</p>
+      <p class="main-p">Welcome to the home page</p>
+      <form>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"/>
+        <br/>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"/>
+        <br/>
+      </form>
     </main>
     <footer></footer>
   </body>
