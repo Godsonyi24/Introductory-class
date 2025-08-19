@@ -16,7 +16,7 @@
       [] bracket (sqr bracket)
       () Parenthesis
       {} curly bracket*/
-      
+
       /* in CSS, we have various selection methods, we have:
       selection by tagname e.g p, header
       selection by classname e.g .class
@@ -24,26 +24,30 @@
       selection by attributes e.g element [attributes="value"]
       */
 
-      p { /*selection by tagname*/
+      p {
+        /*selection by tagname*/
         color: blue;
       }
 
-      .main-p{ /*selection by classname*/
+      .main-p {
+        /*selection by classname*/
         color: yellow;
       }
 
-      #test { /*selection by idname*/
+      #test {
+        /*selection by idname*/
         color: green;
       }
 
-      input[type='password'] { /*selection by attribute*/
+      input[type="password"] {
+        /*selection by attribute*/
         border-color: red;
       }
 
-      h3{
-        color: green!important;
+      h3 {
+        color: green !important;
       }
-      .h-logo{
+      .h-logo {
         color: purple;
         font-weight: 300;
       }
@@ -76,11 +80,11 @@
       <p class="main-p">Welcome to the home page</p>
       <form>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email"/>
-        <br/>
+        <input type="email" name="email" id="email" />
+        <br />
         <label for="password">Password</label>
-        <input type="password" name="password" id="password"/>
-        <br/>
+        <input type="password" name="password" id="password" />
+        <br />
       </form>
     </main>
     <footer></footer>
