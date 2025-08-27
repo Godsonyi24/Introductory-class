@@ -37,10 +37,10 @@ body {
 }
 
 #container {
-  height: 100vh;
+  min-height: 150vh;
   /* background-color: gray; */
   padding: 20px;
-  background-image: url("images/tiger.jpg");
+  background-image: url("images/hiking.png.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
