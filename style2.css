@@ -267,4 +267,143 @@ td:hover {
   padding: 20px;
   /* background: linear-gradient(to left, #000, pink); */
   background: linear-gradient(to right, #000, gray);
+  margin-bottom: 20px;
+}
+
+.radial-gradient {
+  width: 90%;
+  border: 1px solid #f1f2f3;
+  text-align: center;
+  padding: 20px;
+  background: radial-gradient(
+    ellipse closest-side at center,
+    red,
+    orange,
+    yellow 50%,
+    green,
+    blue,
+    indigo
+  );
+  height: 40vh;
+}
+
+.transition {
+  background-color: #fff;
+  height: max-content;
+  padding: 20px;
+}
+
+.transition h2 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.transition-container {
+  background-color: rgb(231, 130, 231);
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+  /* transition-property: background, width, height;
+  transition-duration: 2s; */
+  /* transition-delay: 2s;   */
+  /* transition-timing-function: ease; */
+  transition: all 6s ease-in;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  color: #000;
+  font-size: 24px;
+}
+
+.transition-container:hover {
+  background-color: tomato;
+  width: 500px;
+  /* height: 300px;   */
+}
+
+/* .transition-container:active {
+  background-color: teal;
+  width: 500px;
+  height: 200px;  
+} */
+
+#linear {
+  transition-timing-function: linear;
+}
+
+#ease {
+  transition-timing-function: ease;
+}
+
+#ease-in {
+  transition-timing-function: ease-in;
+}
+
+#ease-out {
+  transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.animation {
+  background-color: papayawhip;
+  height: 500px;
+  padding: 20px;
+}
+
+.animation h2 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.animation-container {
+  background-color: tomato;
+  height: 100px;
+  width: 100px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  /* animation-iteration-count: infinite; */
+  position: relative;
+  /* animation-direction: alternate-reverse; */
+  animation-fill-mode: backwards;
+}
+
+@keyframes example {
+  0% {
+    background-color: tomato;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    background-color: blueviolet;
+    left: 300px;
+    right: 300px;
+    border-radius: 50% 0 0 0;
+  }
+  50% {
+    background-color: blue;
+    top: 300px;
+    left: 300px;
+    border-radius: 50% 50% 0 0;
+  }
+  75% {
+    background-color: green;
+    left: 0;
+    top: 300px;
+    border-radius: 50% 50% 50% 0;
+  }
+  100% {
+    background-color: yellow;
+    left: 0;
+    top: 0;
+    border-radius: 50% 50% 50% 50%;
+  }
 }
