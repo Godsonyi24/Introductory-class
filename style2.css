@@ -302,19 +302,22 @@ td:hover {
 
 .transition-container {
   background-color: rgb(231, 130, 231);
-  height: 200px;
-  width: 200px;
+  height: 80px;
+  width: 150px;
   padding: 30px;
   /* transition-property: background, width, height;
   transition-duration: 2s; */
   /* transition-delay: 2s;   */
   /* transition-timing-function: ease; */
   transition: all 6s ease-in;
-  margin-bottom: 10px;
-  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
   justify-content: center;
   color: #000;
   font-size: 24px;
+  animation-iteration-count: infinite;
 }
 
 .transition-container:hover {
@@ -331,22 +334,72 @@ td:hover {
 
 #linear {
   transition-timing-function: linear;
+  position: relative;
+  animation-name: linear;
+  animation-duration: 4s;
+  animation-timing-function: linear;
 }
 
 #ease {
   transition-timing-function: ease;
+  position: relative;
+  animation-name: ease;
+  animation-duration: 4s;
+  animation-timing-function: ease;
 }
 
 #ease-in {
   transition-timing-function: ease-in;
+  position: relative;
+  animation-name: ease-in;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
 }
 
 #ease-out {
   transition-timing-function: ease-out;
+  position: relative;
+  animation-name: ease-out;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
 }
 
 #ease-in-out {
   transition-timing-function: ease-in-out;
+  position: relative;
+  animation-name: ease-in-out;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes linear {
+  to {
+    width: 800px;
+  }
+}
+
+@keyframes ease {
+  to {
+    width: 800px;
+  }
+}
+
+@keyframes ease-in {
+  to {
+    width: 800px;
+  }
+}
+
+@keyframes ease-out {
+  to {
+    width: 800px;
+  }
+}
+
+@keyframes ease-in-out {
+  to {
+    width: 800px;
+  }
 }
 
 .animation {
@@ -405,5 +458,81 @@ td:hover {
     left: 0;
     top: 0;
     border-radius: 50% 50% 50% 50%;
+  }
+}
+
+.form-page {
+  height: max-content;
+  background-color: tomato;
+  padding: 20px;
+  color: #000;
+  /* display: flex;
+  flex-direction: column;
+  gap: 20px; */
+}
+
+.form-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.form-container {
+  flex: 1;
+  /* display: flex;
+  flex-direction: column;
+  gap: 30px; */
+  border: 1px solid #000;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: moccasin;
+}
+
+.mama {
+  width: 100%;
+  flex: 1;
+  border-radius: 10px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 2px;
+  background-color: whitesmoke;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: tomato;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: thistle;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    flex-direction: column;
   }
 }
